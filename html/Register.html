@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/1.0.0/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body> 
+    <div id="background-image"></div> 
+    <div id="background-overlay"></div>
+    <div id="background-pattern"></div> 
+    <div id="login-form-container">
+        <div class="card" style="width: 400px;">
+            <div class="card-image">
+              <figure class="image is-3by2">
+
+                <img src="logo.png"
+                  alt="Placeholder image"
+                />
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media"> 
+                <div class="is-size-5 has-text-centered">Sign up page</div>
+                </div>
+              <div class="content">
+                <div class="field">
+                  <p class="control has-icons-left has-icons-right">
+                    <input class="input" type="First name" placeholder="First name" />
+                    <span class="icon is-small is-left">
+                      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+                      
+                    </span>
+                   
+                  </p>
+                </div>
+                <div class="field">
+                  <p class="control has-icons-left">
+                    <input class="input" type="Last name" placeholder="Last name" />
+                    
+                  </p>
+                </div> 
+                <div class="field">
+                    <p class="control has-icons-left">
+                      <input class="input" type="Email" placeholder="Email" />
+                      
+                    </p>
+                  </div>
+
+                    <div class="select">
+                      <select>
+                        <option selected>Gender</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                        
+                      </select>
+
+                    
+                </div>
+                <div style="margin-top: 15px;"></div>
+                    <div class="container">
+                      <div class="field">
+                        <div class="control">
+                          <input id="datepicker" class="input" type="text" placeholder="Date of Birth">
+                  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script>
+    
+    flatpickr("#datepicker", {
+     
+      dateFormat: "Y-m-d", 
+    });
+  </script> 
+                        </div>
+                      </div>
+                    </div> 
+                    <div style="margin-top: 15px;"></div>
+
+
+   <div class="field">
+    <p class="control has-icons-left">
+      <input class="input" type="Password" placeholder="Password" />
+
+    </p>
+  </div>
+  <div class="field">
+    <p class="control has-icons-left">
+      <input class="input" type="Confirm password" placeholder="Confirm password" />
+
+    </p>
+  </div>
+ 
+<div>
+   <label class="checkbox">
+    <input type="checkbox" />
+    I agree to the <a href="#">terms and conditions</a>
+  </label>  
+</div>
+                <div class="field">
+                  <button class="button is-fullwidth is-success">Submit</button>
+                </div>
+                
+                   
+              </div>
+            
+          </div>
+    </div> 
+    
+    
+
+    
+        
+       
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="/node_modules/bulma/css/bulma.min.css"> 
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .centered-text {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .heading {
+            color: #4CAF50;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="centered-text">
+        <h1 class="heading">Welcome to My Page</h1>
+        <h2 class="heading">Discover Something New</h2>
+        <h3 class="heading">Explore the Possibilities</h3>
+    </div>
+       
+
+        <blockquote>
+                  Registration form
+          </blockquote>
+<form action="/action_page.php" class="box">
+    <input
+  class="input is-primary"
+  type="First name"
+  placeholder="First name"
+/>
+<input
+class="input is-primary"
+type="Last name"
+placeholder="Last name"
+/>
+    <div class="field">
+        <label class="label">Email</label>
+        <div class="control">
+          <input class="input" type="email" placeholder="e.g. alex@example.com" />
+        </div>
+      </div>
+    
+  <label for="Gender">Choose a gender:</label>
+  <select id="Gender" name="gender">
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+    <option value="Other">Other</option>
+   
+  </select> 
+  <div class="field">
+    <label class="label">Password</label>
+    <div class="control">
+      <input class="input" type="password" placeholder="********" />
+    </div>
+  </div>
+  <div  class="field" >
+    <label  class="label"> Confirm Password:</label>
+    <div class="control">
+        <input class="input" type="password" placeholder="********" />
+    
+  </div>
+  <div>
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required>
+  </div>
+  <button class="button is-primary">Register</button>
+</form>
+       
+
+</body>
+</html>

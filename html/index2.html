@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML server</title>
+    
+</head>
+<body> 
+    
+    <input type="text" id="fname" name="fname" value="John"><br>
+   
+    <label for="quantity">Quantity (between 0 and 100):</label>
+    <input type="number" id="quantity" name="quantity" min="0" max="100"> </input>
+    
+
+    <label class="label">The temperature is </label> 
+    <label class="label" id="tempvalue"></label> 
+    <button id="b1">press me</button> 
+    <script>
+        "use strict"
+        document.getElementById("b1").addEventListener('click',event);
+        document.getElementById("fname").addEventListener('mouseover',event); 
+        document.getElementById("quantity").addEventListener('change', function() {
+           
+            //alert(document.getElementById("quantity").value);
+            const degree= document.getElementById("quantity").value;
+
+            degreeToFahrenheit(degree), 10000;
+        
+        });
+
+        function degreeToFahrenheit(degree) {
+            const fahrenheit=parseInt(degree)*(9/5)+32;
+            document.getElementById("tempvalue").innerText=fahrenheit ;
+        };
+       
+
+        function event() {
+            alert(document.getElementById("fname").value);
+
+        };
+
+    </script> 
+    
+        <h1>Hello HTTP server</h1> 
+        <h2>This is Page 1</h2>
+
+<p>Welcome to Page 1. Click <a href="Registration.html">here</a> to go to Page 2.</p>
+
+       
+
+</body>
+</html>

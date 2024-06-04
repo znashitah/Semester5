@@ -1,0 +1,8 @@
+{
+    "name": "HTTP Server",
+    "version": "1.0.0",
+    "dependencies": {
+        "bulma": "^1.0.0",
+        "express": "^4.17.1"
+    }
+}
