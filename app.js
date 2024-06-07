@@ -11,7 +11,14 @@ app.use(express.static(path.join(__dirname, 'css')));
 app.use(express.static(path.join(__dirname, 'img')));
 
 const server = http.createServer(app);
-const PORT = 3000;
+const PORT = 3000; 
+// Add GET REST endpoint /users/:userid
+app.get('/users/:userid', (req, res) => {
+    const userId = req.params.userid;
+    // For now, we'll just send the userId back in the response
+    res.json({ message: `User ID is ${userId}` });
+});
+
 
 server.listen(PORT, () => {
     console.log(`Server is running and listening on port ${PORT}`);
