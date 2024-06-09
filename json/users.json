@@ -1,52 +1,52 @@
 [
-    {
-        "firstname": "John",
-        "lastname": "Doe",
-        "age": 28,
-        "email": "john.doe@example.com",
-        "dateofbirth": "1995-05-15",
-        "password": "password123",
-        "gender": "male",
-        "userId": "john.doe@example.com"
-    },
-    {
-        "firstname": "Jane",
-        "lastname": "Smith",
-        "age": 32,
-        "email": "jane.smith@example.com",
-        "dateofbirth": "1991-03-22",
-        "password": "securePass456",
-        "gender": "female",
-        "userId": "jane.smith@example.com"
-    },
-    {
-        "firstname": "Alice",
-        "lastname": "Johnson",
-        "age": 25,
-        "email": "alice.johnson@example.com",
-        "dateofbirth": "1998-07-10",
-        "password": "alicePass789",
-        "gender": "female",
-        "userId": "alice.johnson@example.com"
-    },
-    {
-        "firstname": "Bob",
-        "lastname": "Brown",
-        "age": 30,
-        "email": "bob.brown@example.com",
-        "dateofbirth": "1993-12-01",
-        "password": "bobSecure456",
-        "gender": "male",
-        "userId": "bob.brown@example.com"
-    },
-    {
-        "firstname": "Charlie",
-        "lastname": "Williams",
-        "age": 27,
-        "email": "charlie.williams@example.com",
-        "dateofbirth": "1996-08-25",
-        "password": "charliePass123",
-        "gender": "male",
-        "userId": "charlie.williams@example.com"
-    }
+  {
+    "firstname": "John",
+    "lastname": "Doe",
+    "age": 28,
+    "email": "john.doe@example.com",
+    "dateofbirth": "1995-05-15",
+    "password": "password123",
+    "gender": "male",
+    "userId": "john.doe@example.com"
+  },
+  {
+    "firstname": "Jane",
+    "lastname": "Smith",
+    "age": 32,
+    "email": "jane.smith@example.com",
+    "dateofbirth": "1991-03-22",
+    "password": "securePass456",
+    "gender": "female",
+    "userId": "jane.smith@example.com"
+  },
+  {
+    "firstname": "Alice",
+    "lastname": "Johnson",
+    "age": 25,
+    "email": "alice.johnson@example.com",
+    "dateofbirth": "1998-07-10",
+    "password": "alicePass789",
+    "gender": "female",
+    "userId": "alice.johnson@example.com"
+  },
+  {
+    "firstname": "Bob",
+    "lastname": "Brown",
+    "age": 30,
+    "email": "bob.brown@example.com",
+    "dateofbirth": "1993-12-01",
+    "password": "bobSecure456",
+    "gender": "male",
+    "userId": "bob.brown@example.com"
+  },
+  {
+    "firstname": "Charlie",
+    "lastname": "Williams",
+    "age": 27,
+    "email": "charlie.williams@example.com",
+    "dateofbirth": "1996-08-25",
+    "password": "charliePass123",
+    "gender": "male",
+    "userId": "charlie.williams@example.com"
+  }
 ]
