@@ -1,15 +1,5 @@
 [
   {
-    "firstname": "John",
-    "lastname": "Doe",
-    "age": 28,
-    "email": "john.doe@example.com",
-    "dateofbirth": "1995-05-15",
-    "password": "password123",
-    "gender": "male",
-    "userId": "john.doe@example.com"
-  },
-  {
     "firstname": "Jane",
     "lastname": "Smith",
     "age": 32,
@@ -48,5 +38,8 @@
     "password": "charliePass123",
     "gender": "male",
     "userId": "charlie.williams@example.com"
-  }
+  },
+  null,
+  null,
+  {}
 ]
