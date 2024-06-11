@@ -38,8 +38,5 @@
     "password": "charliePass123",
     "gender": "male",
     "userId": "charlie.williams@example.com"
-  },
-  null,
-  null,
-  {}
+  }
 ]

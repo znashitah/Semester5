@@ -17,8 +17,22 @@ const server = http.createServer(app);
 const PORT = 3000;
 // Add GET REST endpoint /users/:userid
 app.get('/users/:userid', (req, res) => {
-    const userId = req.params.userid;
-    res.json({ message: `User ID is ${userId}` });
+    const userId = req.params.userid; 
+    const filePath = path.join(__dirname, 'json/users.json');
+    const data = fs.readFileSync(filePath, 'utf8'); 
+     // Parse the JSON data
+     const users = JSON.parse(data);
+
+     // Find the user with the matching userId
+     const user = users.find(user => user.userId === userId);
+     
+     if (user) {
+         res.json(user);
+     } else {
+         res.status(404).json({ message: `User ID ${userId} not found` });
+     }
+
+  
 });
 app.get('/users', (req, res) => {
     console.log(__dirname);
