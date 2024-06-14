@@ -10,16 +10,6 @@
     "userId": "jane.smith@example.com"
   },
   {
-    "firstname": "Alice",
-    "lastname": "Johnson",
-    "age": 25,
-    "email": "alice.johnson@example.com",
-    "dateofbirth": "1998-07-10",
-    "password": "alicePass789",
-    "gender": "female",
-    "userId": "alice.johnson@example.com"
-  },
-  {
     "firstname": "Bob",
     "lastname": "Brown",
     "age": 30,
@@ -38,5 +28,26 @@
     "password": "charliePass123",
     "gender": "male",
     "userId": "charlie.williams@example.com"
+  },
+  {},
+  {
+    "firstname": "Nashitah",
+    "lastname": "Zainab",
+    "age": 0,
+    "email": "znashitah@gmail.com",
+    "dateofbirth": "2024-06-13",
+    "password": "123456",
+    "gender": "female",
+    "userId": "znashitah@gmail.com"
+  },
+  {
+    "firstname": "Usman",
+    "lastname": "saleem",
+    "age": 2,
+    "email": "znashitah@gmail.com",
+    "dateofbirth": "2022-08-17",
+    "password": "123456",
+    "gender": "male",
+    "userId": "znashitah@gmail.com"
   }
 ]
