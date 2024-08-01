@@ -51,6 +51,19 @@ app.get('/users', (req, res) => {
     const data = fs.readFileSync(filePath, 'utf8');
     res.json(JSON.parse(data));
 }); 
+app.get('/userindb', (req, res) => {
+    const query = 'SELECT * FROM USER'; // SQL query to retrieve all users 
+    const connection = mysql.createConnection(dbConfig);
+
+    connection.query(query, (err, results) => {
+        if (err) {
+            console.error('Error retrieving users from MySQL:', err);
+            return res.status(500).json({ message: 'Error retrieving users from database' });
+        }
+
+        res.status(200).json(results); // Send the retrieved users as JSON
+    });
+}); 
 
 
 app.delete('/users/:userid', (req, res) => {
@@ -72,6 +85,26 @@ app.delete('/users/:userid', (req, res) => {
         res.status(404).json({ message: 'User not found' });
     }
 }); 
+// DELETE endpoint to remove a user
+app.delete('/userindb/:USERID', (req, res) => {
+    const USERID = req.params.USERID;
+
+    // SQL query to delete a user
+    const query = 'DELETE FROM USER WHERE USERID = ?';
+    const values = [USERID];
+    const connection = mysql.createConnection(dbConfig);
+
+    connection.query(query, values, (err, results) => {
+        if (err) {
+            console.error('Error deleting user from MySQL:', err);
+            return res.status(500).json({ message: 'Error deleting user from database' });
+        }
+        if (results.affectedRows === 0) {
+            return res.status(404).json({ message: 'User not found' });
+        }
+        res.status(200).json({ message: 'User deleted successfully' });
+    });
+});
 app.post('/users', (req, res) => {
     // Read existing users from the file
     const filePath = path.join(__dirname, 'json/users.json');

@@ -13,6 +13,11 @@ To turn off server: Control C.
 # Database Info
 username: root
 password: Usman123
-Host: 127.0.0.1:3306
+Host: 127.0.0.1:3306 
 
-npm install
+# Git commands 
+To know status: git status
+git add . 
+git commit -m "Any message"
+# When add something in package
+Run in terminal: npm install 
