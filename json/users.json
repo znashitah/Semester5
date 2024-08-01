@@ -25,7 +25,7 @@
     "age": 27,
     "email": "charlie.williams@example.com",
     "dateofbirth": "1996-08-25",
-    "password": "charliePass123",
+    "password": "charliePass456",
     "gender": "male",
     "userId": "charlie.williams@example.com"
   },
@@ -49,5 +49,15 @@
     "password": "123456",
     "gender": "male",
     "userId": "znashitah@gmail.com"
+  },
+  {
+    "firstname": "John",
+    "lastname": "Linken",
+    "age": 12,
+    "email": "johnl@gmail.com",
+    "dateofbirth": "2012-07-17",
+    "password": "123456",
+    "gender": "male",
+    "userId": "johnl@gmail.com"
   }
 ]
